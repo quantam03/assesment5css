@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: yellow;
+
+}
+.text{
+    text-align: center;
+    font-weight: 800;
+}
+.square1{
+    width:100px;
+    height:100px;
+    background:rgb(21, 90, 136);
+    transform:skew(30deg);
+    position:relative;
+    margin-top:20px;
+    margin-left: 100px;
+    overflow:hidden;
+    display: inline-flex;
+    animation-name: abc;
+    animation-fill-mode: none;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes abc {
+    from{
+      
+        transform: skewX(-30deg);
+    }
+    to{
+        transform: skewX(30deg);
+    }
+    
+}
+.square2{
+    width:100px;
+    height:100px;
+    background:rgb(84, 47, 99);
+    transform:rotate(-25deg);
+    position:relative;
+    margin-top:50px;
+    margin-left: 100px;
+    overflow:hidden;
+    display: inline-flex;
+    animation-name: def;
+    animation-fill-mode: backwards;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes def{
+    from{
+        transform: rotate(-25deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.square3{
+    width:100px;
+    height:100px;
+    background:rgb(122, 150, 168);
+    transform:skewY(-20deg);
+    position:relative;
+    margin-top:50px;
+    margin-left: 100px;
+    overflow:hidden;
+    display: inline-flex;
+    animation-name: ghi;
+    animation-fill-mode: backwards;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes ghi{
+    from{
+        transform: skewY(-20deg);
+    }
+    to{
+        transform: skewY(20deg);
+    }
+}
+.x1{
+    width:100px;
+    height:50px;
+    background:rgb(236, 160, 18);
+    position:relative;
+    margin-top:50px;
+    margin-left: 100px;
+    overflow:hidden;
+    display: inline-flex;
+    animation-name: jkl;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* transition: linear 100px width 100px; */
+}
+@keyframes jkl{
+    from{
+        height: 50px;
+    }
+    to{
+        height: 100px;
+    }
+}
+.x2{
+    width:50px;
+    height:100px;
+    background:rgb(168, 74, 74);
+    position:relative;
+    margin-top:50px;
+    margin-left: 100px;
+    overflow:hidden;
+    display: inline-flex;
+    animation-name: mno;
+    animation-fill-mode: forwards;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* transition: linear 100px width 100pxs; */
+}
+@keyframes mno{
+    from{
+        width: 50px;
+    }
+    to{
+        width: 100px;
+    }
+}
+.x3{
+    width:100px;
+    height:100px;
+    background:rgb(84, 47, 99);
+    transform:skewX(-10deg);
+    position:relative;
+    margin-top:50px;
+    margin-left: 100px;
+    overflow:hidden;
+    display: inline-flex;
+    animation-name: pqr;
+    animation-fill-mode: backwards;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes pqr{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+.block1{
+    position: relative;
+    display:inline-flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background: rgb(5, 204, 15);
+    transition: width 2s linear 1s;
+  }
+  
+.block1:hover {
+    width: 300px;
+  }
+
+  .block2 {
+    position: relative;
+    margin-left: 46.5%;
+    display: flex;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background: rgb(11, 209, 11);
+    transition: width 2s, height 4s;
+  }
+  
+  .block2:hover {
+    width: 300px;
+    height: 300px;
+  }
+
+  .block3 {
+    position: relative;
+    display: flex;
+    margin-left: 46.5%;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background: rgb(11, 209, 11);
+    transition: width 2s;
+    transition-timing-function: linear;
+  }
+
+  .block3:hover {
+    width: 300px;
+  }
+  .block4 {
+    position: relative;
+    display: flex;
+    margin-left: 46.5%;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background: rgb(11, 209, 11);
+    transition: width 2s;
+    transition-timing-function: ease;
+  }
+
+  .block4:hover {
+    width: 300px;
+  }
+  .block5 {
+    position: relative;
+    display: flex;
+    margin-left: 46.5%;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background: rgb(11, 209, 11);
+    transition: width 2s;
+    transition-timing-function: ease-in;
+  }
+
+  .block5:hover {
+    width: 300px;
+  }
+  .block6 {
+    position: relative;
+    display: flex;
+    margin-left: 46.5%;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background: rgb(11, 209, 11);
+    transition: width 2s;
+    transition-timing-function: ease-out;
+  }
+
+  .block6:hover {
+    width: 300px;
+  }
+  .block7 {
+    position: relative;
+    display: flex;
+    margin-left: 46.5%;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background: rgb(11, 209, 11);
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .block7:hover {
+    width: 300px;
+  }
+
+  .main{
+   height: 100vh;
+   width: 100%;
+   background-image: url(./sky.jpg);
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   overflow-x: hidden;   
+  }
+.wish{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+.w1{
+    font-weight: bold;
+    background-color: orange;
+    display: inline-flex;
+}
+.w2{
+    font-weight: bold;
+    background-color: rgb(253, 253, 253);
+    display: inline-flex;
+}
+.w3{
+    font-weight: bold;
+    background-color: rgb(5, 102, 42);
+    display: inline-flex;
+}
+  .road{
+      height: 200px;
+      width: 500%;
+      display: block;
+      background-image: url(./road.jpg);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-repeat: repeat-x;
+      animation-name: highway;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      transition-timing-function: linear;
+}
+@keyframes highway
+{
+    100%{
+        transform: translate(-3400px);
+    }
+}
+.city{
+    height: 250px;
+    width: 500%;
+    background-image: url(./city.png);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation-name: city;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    transition-timing-function: linear;
+}
+@keyframes city{
+    100%{
+        transform: translate(-1400px);
+    }
+}
+.car{
+width: 400px;
+left: 50%;
+bottom: 100px;
+transform: translate(-50%);
+position: absolute;
+z-index: 2;
+}
+.car img{
+    width: 100%;
+    animation-name: car;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+}
+@keyframes car{
+    100%{
+        transform: translate(-1px);
+    }
+   
+    50%{
+        transform: translate(-1px);
+    }
+    0%{
+        transform: translate(-1px);
+    }
+}
+.wheel{
+    left: 50%;
+    bottom: 178px;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 2;
+
+}
+.wheel img{
+    width: 72px;
+    height: 72px;
+    animation-name: wheel;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    transition-timing-function: linear;
+}
+
+
+.backwheel{
+    left: -165px;
+    position: absolute;
+}
+.frontwheel{
+    left: 80px;
+    position: absolute;
+}
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
